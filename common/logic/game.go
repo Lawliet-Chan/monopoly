@@ -65,6 +65,7 @@ func NewGame(playerNames []string) *Game {
 }
 
 // 掷骰子
+// TODO: 将改成链上VRF随机数实现
 func (g *Game) RollDice() int {
 	return rand.Intn(6) + 1 + rand.Intn(6) + 1
 }
@@ -161,6 +162,7 @@ func (g *Game) GetWinner() *Player {
 }
 
 // GenerateGameID 生成游戏ID
+// TODO: 将改成链上VRF随机数实现
 func GenerateGameID() string {
 	// 实现一个简单的ID生成逻辑，实际项目中可以使用UUID
 	return "game-" + string(rand.Int63())
