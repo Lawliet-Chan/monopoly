@@ -153,7 +153,7 @@ require (
 	github.com/tendermint/tendermint v0.35.9 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect
-	github.com/yu-org/go-yu-sdk v0.0.0-20241107030728-f121267e223f // indirect
+	github.com/yu-org/go-yu-sdk v0.0.0-20241107041244-a718c6de5c45 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
 	go.uber.org/dig v1.18.0 // indirect

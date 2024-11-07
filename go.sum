@@ -1580,6 +1580,10 @@ github.com/yagipy/maintidx v1.0.0/go.mod h1:0qNf/I/CCZXSMhsRsrEPDZ+DkekpKLXAJfsT
 github.com/yeya24/promlinter v0.2.0/go.mod h1:u54lkmBOZrpEbQQ6gox2zWKKLKu2SGe+2KOiextY+IA=
 github.com/yu-org/go-yu-sdk v0.0.0-20241107030728-f121267e223f h1:e9f2qSP6pFIb2msebn2Whxi5vAvJwsVeehNSIh2XKdA=
 github.com/yu-org/go-yu-sdk v0.0.0-20241107030728-f121267e223f/go.mod h1:CRWa21cAHXzlAPQaAbccgFqXL37wedTwuxl0T5HgreE=
+github.com/yu-org/go-yu-sdk v0.0.0-20241107040524-5cf6c9c0a9c7 h1:VwwKGoz1WPt30/drC8uW/gHEhURwJoJ9uD5VseGYFIs=
+github.com/yu-org/go-yu-sdk v0.0.0-20241107040524-5cf6c9c0a9c7/go.mod h1:CRWa21cAHXzlAPQaAbccgFqXL37wedTwuxl0T5HgreE=
+github.com/yu-org/go-yu-sdk v0.0.0-20241107041244-a718c6de5c45 h1:zAlBQh1ylbCRwMH55NJSDlCrlur3DEbxSIpAyGGIaHg=
+github.com/yu-org/go-yu-sdk v0.0.0-20241107041244-a718c6de5c45/go.mod h1:CRWa21cAHXzlAPQaAbccgFqXL37wedTwuxl0T5HgreE=
 github.com/yu-org/yu v1.2.6 h1:6xTL4D8rWHFQmT51F1gy4m+cM8j+XJd6COL1XPXKBzs=
 github.com/yu-org/yu v1.2.6/go.mod h1:LHBLDJ2fakzuFiUi1KFhdMCCgo2RZzSwDgjxTZlJPDo=
 github.com/yudai/gojsondiff v1.0.0/go.mod h1:AY32+k2cwILAkW1fbgxQ5mUmMiZFgLIV+FBNExI05xg=
