@@ -9,6 +9,8 @@ import (
 	"net/http"
 )
 
+var GameNotFound = errors.New("game not found")
+
 type GameManager struct {
 	*tripod.Tripod
 	games map[string]*logic.Game
@@ -36,8 +38,6 @@ func (gm *GameManager) CreateGame(ctx *context.WriteContext) error {
 	gm.games[gameID] = game
 	return nil
 }
-
-var GameNotFound = errors.New("game not found")
 
 func (gm *GameManager) GetGameState(ctx *context.ReadContext) {
 	gameID := ctx.GetString("gameId")

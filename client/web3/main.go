@@ -2,11 +2,13 @@ package main
 
 import (
 	"github.com/yu-org/go-yu-sdk/pkg"
+	"github.com/yu-org/yu/core/keypair"
 	"monopoly/common/types"
 )
 
 func main() {
-	cli := pkg.NewClient("http://localhost:7999").WithLeiPrice(1)
+	pubkey, privkey := keypair.GenEdKeyWithSecret([]byte("Alice"))
+	cli := pkg.NewClient("http://localhost:7999").WithLeiPrice(1).WithKeys(privkey, pubkey)
 	err := cli.WriteChain(
 		"gamemanager", "CreateGame",
 		types.CreateGameRequest{
