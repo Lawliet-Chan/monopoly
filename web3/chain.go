@@ -49,7 +49,7 @@ func (gm *GameManager) GetGameState(ctx *context.ReadContext) {
 	ctx.JsonOk(types.GameStateResponse{
 		CurrentPlayer: game.Current,
 		Players:       game.Players,
-		Board:         game.Board[:],
+		Board:         game.Board,
 	})
 }
 

@@ -14,7 +14,7 @@ type CreateGameResponse struct {
 type GameStateResponse struct {
 	CurrentPlayer int             `json:"currentPlayer"`
 	Players       []*logic.Player `json:"players"`
-	Board         []*logic.Space  `json:"board"`
+	Board         []*logic.Place  `json:"board"`
 }
 
 type ActionResponse struct {

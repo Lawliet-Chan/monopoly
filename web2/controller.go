@@ -80,7 +80,7 @@ func (h *Handler) GetGameState(c *gin.Context) {
 	c.JSON(http.StatusOK, types.GameStateResponse{
 		CurrentPlayer: game.Current,
 		Players:       game.Players,
-		Board:         game.Board[:],
+		Board:         game.Board,
 	})
 }
 

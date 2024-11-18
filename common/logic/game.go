@@ -6,7 +6,7 @@ import (
 )
 
 // 地块类型
-type Space struct {
+type Place struct {
 	ID       int
 	Name     string
 	Price    int     // 购买价格
@@ -21,12 +21,12 @@ type Player struct {
 	Name     string
 	Money    int
 	Position int
-	Property []*Space // 拥有的地产
+	Property []*Place // 拥有的地产
 }
 
 // 游戏结构
 type Game struct {
-	Board   [40]*Space // 棋盘，40个格子
+	Board   []*Place // 棋盘，多个格子
 	Players []*Player
 	Current int // 当前玩家索引
 }
@@ -44,14 +44,14 @@ func NewGame(playerNames []string) *Game {
 			Name:     name,
 			Money:    1500, // 初始资金
 			Position: 0,
-			Property: make([]*Space, 0),
+			Property: make([]*Place, 0),
 		}
 	}
 
 	// 初始化棋盘
 	for i := 0; i < 40; i++ {
 		if i%5 != 0 { // 每隔5个空格设置一个可购买的地产
-			game.Board[i] = &Space{
+			game.Board[i] = &Place{
 				ID:       i,
 				Name:     "地产" + string(rune('A'+i)),
 				Price:    (i + 1) * 100,
